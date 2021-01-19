@@ -5,7 +5,8 @@ export default function DefaultLayout({ children }) {
   return (
     <>
       <Header />
-      {children}
+      <div>{children}</div>
+      {/* Cookie Banner */}
       <Footer />
     </>
   );

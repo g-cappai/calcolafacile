@@ -1,15 +1,27 @@
 import DefaultLayout from "../../components/layouts/default-layout";
-import CalcMeta from "../../components/modules/calc-meta";
 import ContactUsBlock from "../../components/modules/block-contactus";
 
 export default function CalcPageTemplate({ title, desc, children }) {
   return (
     <DefaultLayout>
-      {/* {AD} */}
-      <CalcMeta title={title} desc={desc} />
-      {/* {AD} */}
-      {children}
       <ContactUsBlock />
+      <main className="my-1">
+        {/* {AD} */}
+        <div className="container py-1">
+          <h1 className="my-1">{title}</h1>
+          <p className="mb-1">{desc}</p>
+          <style jsx>
+            {`
+              h1 {
+                font-weight: 500;
+                font-size: 1.45rem;
+              }
+            `}
+          </style>
+        </div>
+        {/* {AD} */}
+        {children}
+      </main>
     </DefaultLayout>
   );
 }

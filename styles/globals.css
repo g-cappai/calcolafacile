@@ -1,3 +1,12 @@
+/* var */
+
+:root {
+  --primary: #0b42e6;
+  --primary-light: #f1f4ff;
+}
+
+/* --- */
+
 html,
 body {
   padding: 0;
@@ -15,9 +24,95 @@ a {
   box-sizing: border-box;
 }
 
+body {
+  color: #2e2e2e;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p {
+  line-height: 1.75;
+}
+
+input {
+  font-size: 18px;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.py-1 {
+  padding: 0.7rem 0 1rem 0;
+}
+
+.py-2 {
+  padding: 1.2rem 0 1.5rem 0;
+}
+
+/* Custom classes */
+
+.inline-block {
+  display: inline-block;
+}
+
 .container {
   max-width: 1024px;
   width: 100%;
-  padding: 0 1rem;
-  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-msg {
+  color: red;
+  font-size: 1rem;
+}
+
+.result-msg {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  background-color: var(--primary-light);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.highlight-res {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 500;
 }
