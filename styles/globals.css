@@ -1,7 +1,7 @@
 /* var */
 
 :root {
-  --primary: #0b42e6;
+  --primary: #0b50e6;
   --primary-light: #f1f4ff;
 }
 
@@ -16,8 +16,9 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--primary);
   text-decoration: none;
+  font-weight: 500;
 }
 
 * {

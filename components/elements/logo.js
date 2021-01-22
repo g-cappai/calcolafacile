@@ -1,14 +1,19 @@
-import { useRouter } from "next/router";
-
+import isHome from "../../utils/isHome";
+import Link from "next/link";
 export default function Logo() {
-  const currentPath = useRouter().pathname;
   return (
     <>
-      {currentPath == "/" ? (
-        <h1 className="logo">CalcolaFacile.it</h1>
-      ) : (
-        <h2 className="logo">CalcolaFacile.it</h2>
-      )}
+      <Link href="/">
+        {isHome() ? (
+          <a>
+            <h1 className="logo">CalcolaFacile.it</h1>
+          </a>
+        ) : (
+          <a>
+            <h2 className="logo">CalcolaFacile.it</h2>
+          </a>
+        )}
+      </Link>
       <style jsx>{`
         .logo {
           color: var(--primary);

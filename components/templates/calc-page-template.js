@@ -3,8 +3,8 @@ import ContactUsBlock from "../../components/modules/block-contactus";
 
 export default function CalcPageTemplate({ title, desc, children }) {
   return (
-    <DefaultLayout>
-      <ContactUsBlock />
+    <DefaultLayout title={title} desc={desc}>
+      {/* <ContactUsBlock /> */}
       <main className="my-1">
         {/* {AD} */}
         <div className="container py-1">
