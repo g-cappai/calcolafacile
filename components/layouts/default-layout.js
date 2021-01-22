@@ -17,10 +17,19 @@ export default function DefaultLayout({ title, desc, children }) {
         </title>
         <meta name="description" content={isHome() ? homeDesc : desc} />
       </Head>
-      <Header />
-      <div>{children}</div>
-      {/* Cookie Banner */}
-      <Footer />
+      <div className="page-wrapper">
+        <Header />
+        <main className="my-1">{children}</main>
+        {/* Cookie Banner */}
+        <Footer />
+      </div>
+      <style jsx>{`
+        .page-wrapper {
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+        }
+      `}</style>
     </>
   );
 }
