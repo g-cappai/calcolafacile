@@ -8,7 +8,7 @@ export default function CalcPageTemplate({ title, desc, children }) {
       {/* {AD} */}
       <main className="container py-1">
         <h1 className="my-1">{title}</h1>
-        <p className="mb-1">{desc}</p>
+        <div className="mb-1">{desc.map((sentence,i) => {return <p key={sentence.slice(3) + i}>{sentence}</p>})}</div>
         <style jsx>
           {`
             h1 {

@@ -10,8 +10,8 @@ import Value from "../../components/elements/input-calcvalue";
 export const title = "Calcolo della percentuale",
   desc = [
     "Calcola la percentuale di un numero oppure utilizza le formule inverse. ",
-    "Puoi calcolare uno sconto o un aumento in percentuale semplicemente compilando i primi due campi.",
-  ];
+    "Puoi calcolare uno sconto o un aumento in percentuale semplicemente compilando i primi due campi."]
+;
 
 function Calc0() {
   const [perc, setPerc] = useState("");
