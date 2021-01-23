@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <DefaultLayout title={title} desc={desc}>
         <main>
-        <div className="container mt-2">
+        <div className="container empty-page-center">
           <h2 className="mb-1">CalcolaFacile.it è appena nato!</h2>
           <p>
             Il sito nasce con l'obbiettivo di raggruppare e rendere sempre
