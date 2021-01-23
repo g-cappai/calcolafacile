@@ -33,7 +33,8 @@ export default function CalcBlock({
             margin-right: 5px;
             border-radius: 5px;
             cursor: pointer;
-            letter-spacing: 0.7px;
+            letter-spacing: 0.7px;            
+            border: 1px solid var(--primary);
           }
 
           button:focus {
@@ -42,7 +43,6 @@ export default function CalcBlock({
 
           .clear {
             color: var(--primary);
-            border: 1px solid var(--primary);
           }
 
           .clear:hover {
