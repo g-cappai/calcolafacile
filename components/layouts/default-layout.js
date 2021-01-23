@@ -19,7 +19,7 @@ export default function DefaultLayout({ title, desc, children }) {
       </Head>
       <div className="page-wrapper">
         <Header />
-        <main className="my-1">{children}</main>
+        <div className="page-content my-1">{children}</div>
         {/* Cookie Banner */}
         <Footer />
       </div>
@@ -28,6 +28,10 @@ export default function DefaultLayout({ title, desc, children }) {
           display: flex;
           flex-direction: column;
           min-height: 100vh;
+        }           
+         
+        .page-content {
+          flex-grow: 1;
         }
       `}</style>
     </>

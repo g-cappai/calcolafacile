@@ -12,7 +12,7 @@ export default function Header() {
       </header>
       <style jsx>{`
         .container {
-          height: 50px;
+          height: 60px;
           display: flex;
           align-items: center;
         }

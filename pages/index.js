@@ -8,7 +8,8 @@ export default function Home() {
   return (
     <>
       <DefaultLayout title={title} desc={desc}>
-        <div className="container">
+        <main>
+        <div className="container mt-2">
           <h2 className="mb-1">CalcolaFacile.it è appena nato!</h2>
           <p>
             Il sito nasce con l'obbiettivo di raggruppare e rendere sempre
@@ -26,6 +27,7 @@ export default function Home() {
             ?
           </p>
         </div>
+        </main>
       </DefaultLayout>
       <style jsx>
         {`
@@ -38,6 +40,7 @@ export default function Home() {
             text-align: center;
             font-size: 1.2rem;
           }
+
         `}
       </style>
     </>

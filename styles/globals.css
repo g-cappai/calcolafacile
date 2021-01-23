@@ -37,9 +37,6 @@ body {
   color: #2e2e2e;
 }
 
-main {
-  flex-grow: 1;
-}
 
 hr {
   display: block;
@@ -86,6 +83,10 @@ input {
 
 .mt-1 {
   margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
 }
 
 .py-1 {

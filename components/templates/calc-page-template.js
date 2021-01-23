@@ -6,7 +6,7 @@ export default function CalcPageTemplate({ title, desc, children }) {
     <DefaultLayout title={title} desc={desc}>
       {/* <ContactUsBlock /> */}
       {/* {AD} */}
-      <div className="container py-1">
+      <main className="container py-1">
         <h1 className="my-1">{title}</h1>
         <p className="mb-1">{desc}</p>
         <style jsx>
@@ -17,7 +17,7 @@ export default function CalcPageTemplate({ title, desc, children }) {
             }
           `}
         </style>
-      </div>
+      </main>
       {/* {AD} */}
       {children}
     </DefaultLayout>
