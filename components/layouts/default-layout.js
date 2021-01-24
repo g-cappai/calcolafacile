@@ -15,7 +15,10 @@ export default function DefaultLayout({ title, desc, children }) {
         <title>
           {isHome() ? `${siteName} - ${siteMotto}` : `${title} | ${siteName}`}
         </title>
-        <meta name="description" content={isHome() ? homeDesc : desc} />
+        <meta
+          name="description"
+          content={isHome() ? homeDesc : desc.join("")}
+        />
       </Head>
       <div className="page-wrapper">
         <Header />
@@ -28,8 +31,8 @@ export default function DefaultLayout({ title, desc, children }) {
           display: flex;
           flex-direction: column;
           min-height: 100vh;
-        }           
-         
+        }
+
         .page-content {
           flex-grow: 1;
         }
