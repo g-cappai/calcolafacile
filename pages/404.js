@@ -1,7 +1,7 @@
 import DefaultLayout from "../components/layouts/default-layout";
 import Link from "next/link";
 const TITLE = "Pagina non trovata",
-  DESC = "Contenuto non trovato";
+  DESC = ["Contenuto non trovato"];
 
 export default function PageNotFound() {
   return (
