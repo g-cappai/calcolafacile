@@ -33,7 +33,7 @@ export default function CalcBlock({
             margin-right: 5px;
             border-radius: 5px;
             cursor: pointer;
-            letter-spacing: 0.7px;            
+            letter-spacing: 0.7px;
             border: 1px solid var(--primary);
           }
 
@@ -59,16 +59,13 @@ export default function CalcBlock({
           }
 
           .card {
-            padding: 1rem 1.5rem 1.5rem 1.5rem;
-            border: 1px solid #ccc;
-            border-radius: 8px;
             text-align: center;
             width: fit-content;
-            margin: 0 auto;
+            border: 1px solid #ccc;
           }
 
           .example {
-            opacity: 85%;
+            color: rgba(0, 0, 0, 0.7);
             font-size: 90%;
             margin-top: 0.5rem;
           }
@@ -76,6 +73,8 @@ export default function CalcBlock({
           .explanation {
             font-size: 1rem;
             font-weight: 600;
+            line-height: 0.5;
+            margin-bottom: 1rem;
           }
 
           .procedure {

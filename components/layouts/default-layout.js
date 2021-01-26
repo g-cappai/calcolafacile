@@ -8,21 +8,18 @@ const siteName = "CalcolaFacile.it",
   homeDesc =
     "CalcolaFacile.it ti permette di svolgere tanti tipi di calcoli in modo semplice e veloce!";
 
-export default function DefaultLayout({ title, desc, children }) {
+export default function DefaultLayout({ title, meta_desc, children }) {
   return (
     <>
       <Head>
         <title>
           {isHome() ? `${siteName} - ${siteMotto}` : `${title} | ${siteName}`}
         </title>
-        <meta
-          name="description"
-          content={isHome() ? homeDesc : desc.join("")}
-        />
+        <meta name="description" content={isHome() ? homeDesc : meta_desc} />
       </Head>
       <div className="page-wrapper">
         <Header />
-        <div className="page-content my-1">{children}</div>
+        <div className="page-content">{children}</div>
         {/* Cookie Banner */}
         <Footer />
       </div>
