@@ -33,7 +33,7 @@ export default function CalcBlock({
             margin-right: 5px;
             border-radius: 5px;
             cursor: pointer;
-            letter-spacing: 0.7px;
+            letter-spacing: 0.7pt;
             border: 1px solid var(--primary);
           }
 
@@ -55,7 +55,7 @@ export default function CalcBlock({
           }
 
           .submit:hover {
-            opacity: 80%;
+            opacity: 90%;
           }
 
           .card {
@@ -73,8 +73,6 @@ export default function CalcBlock({
           .explanation {
             font-size: 1rem;
             font-weight: 600;
-            line-height: 0.5;
-            margin-bottom: 1rem;
           }
 
           .procedure {
