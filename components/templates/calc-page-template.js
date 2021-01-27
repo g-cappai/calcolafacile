@@ -5,8 +5,8 @@ import ContactForm from "../../components/modules/contact-form";
 export default function CalcPageTemplate({ title, desc, meta_desc, children }) {
   return (
     <DefaultLayout title={title} meta_desc={meta_desc}>
-      <ContactUsBlock />
-      <ContactForm />
+      {/* <ContactUsBlock />
+      <ContactForm /> */}
       {/* {AD} */}
       <main className="container  my-1 py-1">
         <h1 className="my-1">{title}</h1>

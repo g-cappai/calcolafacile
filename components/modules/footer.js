@@ -3,7 +3,7 @@ export default function Footer() {
     <>
       <footer>
         <div className="container">
-          <div className="copy mb-1">CalcolaFacile.it - Copyright 2021</div>
+          <div className="copy my-1">CalcolaFacile.it - Copyright 2021</div>
         </div>
       </footer>
       <style jsx>{`
