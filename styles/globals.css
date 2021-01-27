@@ -138,3 +138,10 @@ input {
   margin: 0 auto;
   background-color: white;
 }
+
+.page-title {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

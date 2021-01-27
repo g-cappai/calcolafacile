@@ -11,11 +11,6 @@ export const TITLE = "Calcolo della percentuale",
   DESC = [
     "Calcola la percentuale di un numero oppure utilizza le formule inverse. ",
     "Puoi calcolare uno sconto o un aumento in percentuale semplicemente compilando i primi due campi.",
-    "Puoi calcolare uno sconto o un aumento in percentuale semplicemente compilando i primi due campi.",
-    "Puoi calcolare uno sconto o un aumento in percentuale semplicemente compilando i primi due campi.",
-    "Puoi calcolare uno sconto o un aumento in percentuale semplicemente compilando i primi due campi.",
-    "Puoi calcolare uno sconto o un aumento in percentuale semplicemente compilando i primi due campi.",
-    "Puoi calcolare uno sconto o un aumento in percentuale semplicemente compilando i primi due campi.",
   ],
   META_DESC =
     "Calcola la percentuale di un numero, lo sconto o l'aumento in percentuale. Oppure utilizza le formule inverse.";
