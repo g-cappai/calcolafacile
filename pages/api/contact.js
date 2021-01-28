@@ -3,33 +3,24 @@ import nodemailer from "nodemailer";
 const dotenv = require("dotenv");
 
 const transporter = nodemailer.createTransport({
-  host: "smtp.aruba.it",
+  host: "smtps.aruba.it",
   port: "465",
+  logger: true,
   secure: true,
+  debug: true,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PSW,
   },
+  tls: {
+    minVersion: "TLSv1.2",
+  },
 });
 
 export default async (req, res) => {
-  const {
-    name = senderEmail.match(regex).toString(),
-    senderMail,
-    subject,
-    recipientMail,
-    content,
-  } = req.body;
+  const { name, senderMail, subject, recipientMail, content } = req.query;
 
-  console.log(
-    (name = senderEmail.match(regex).toString()),
-    senderMail,
-    subject,
-    recipientMail,
-    content
-  );
-
-  const mailerRes = await mailerRes({
+  const mailerRes = await mailer({
     name,
     senderMail,
     subject,
@@ -46,7 +37,7 @@ const mailer = ({ name, senderMail, subject, recipientMail, text }) => {
     to: process.env.CONTACT_EMAIL,
     subject,
     text,
-    replyTo: senderEmail,
+    replyTo: senderMail,
   };
 
   return new Promise((resolve, reject) => {
@@ -55,12 +46,3 @@ const mailer = ({ name, senderMail, subject, recipientMail, text }) => {
     );
   });
 };
-
-// verify connection configuration
-transporter.verify(function (error, success) {
-  if (error) {
-    console.log(error);
-  } else {
-    console.log("Server is ready to take our messages");
-  }
-});
