@@ -21,6 +21,14 @@ export default async (req, res) => {
     content,
   } = req.body;
 
+  console.log(
+    (name = senderEmail.match(regex).toString()),
+    senderMail,
+    subject,
+    recipientMail,
+    content
+  );
+
   const mailerRes = await mailerRes({
     name,
     senderMail,
