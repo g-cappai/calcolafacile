@@ -26,6 +26,7 @@ const formatted = (sitemap) => prettier.format(sitemap, { parser: "html" });
     .map((page) => {
       const path = page
         .replace("pages/", "")
+        .replace("../", "")
         .replace(".js", "")
         .replace(/\/index/g, "");
       const routePath = path === "index" ? "" : path;
