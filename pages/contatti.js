@@ -308,7 +308,14 @@ export default function ContactPage() {
               padding: 0.3rem;
               background-color: rgba(0, 0, 0, 0.02);
               font-weight: 400;
-              outline-color: var(--primary);
+              outline: none;
+            }
+
+            input:focus,
+            textarea:focus,
+            select:focus {
+              box-shadow: 0 0 0 2px var(--primary-lesser-light);
+              border: 1px solid var(--primary);
             }
 
             .contact-container {
