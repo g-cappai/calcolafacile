@@ -1,12 +1,11 @@
 import DefaultLayout from "../components/layouts/default-layout";
 import Link from "next/link";
-const TITLE = "Pagina non trovata",
-  DESC = ["Contenuto non trovato"];
+const TITLE = "Pagina non trovata";
 
 export default function PageNotFound() {
   return (
     <>
-      <DefaultLayout title={TITLE} desc={DESC}>
+      <DefaultLayout title={TITLE}>
         <div className="container empty-page-center">
           <p>
             <b>Oops! La pagina che cerchi non esiste</b>

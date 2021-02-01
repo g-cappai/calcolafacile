@@ -2,12 +2,13 @@ import Link from "next/link";
 import DefaultLayout from "../components/layouts/default-layout";
 
 const TITLE = "",
-  DESC = "";
+  META_DESC =
+    "CalcolaFacile.it ti permette di svolgere tanti tipi di calcoli in modo semplice e veloce!";
 
 export default function Home() {
   return (
     <>
-      <DefaultLayout title={TITLE} desc={DESC}>
+      <DefaultLayout title={TITLE} meta_desc={META_DESC}>
         <main>
           <div className="container empty-page-center">
             <h2 className="mb-1">CalcolaFacile.it è appena nato!</h2>

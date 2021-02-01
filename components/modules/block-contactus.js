@@ -1,9 +1,13 @@
+import Link from "next/link";
+
 export default function ContactUsBlock() {
   return (
     <div className="outer-container">
       <div className="container py-2 text">
         <span>CalcolaFacile.it è in cerca di idee. </span>{" "}
-        <span className="highlight"> Segnalaci nuovi calcoli.</span>
+        <Link href="/contatti">
+          <a className="highlight"> Segnalaci nuovi calcoli.</a>
+        </Link>
       </div>
       <style jsx>
         {`
@@ -20,7 +24,8 @@ export default function ContactUsBlock() {
             font-size: 105%;
           }
 
-          .text p {
+          .text p,
+          a {
             color: #333333;
           }
 
