@@ -1,3 +1,5 @@
+//!!!!MESSY PAGE!!!! Pro tip: Think -> Project -> Realize || TO BE REVIEWED
+
 import DefaultLayout from "../components/layouts/default-layout";
 import PopupNotification from "../components/modules/popup-notification";
 import axios from "axios";
@@ -98,7 +100,6 @@ export default function ContactPage() {
               message: "Messaggio inviato correttamente.",
             });
           } else {
-            console.log(response.data.error);
             setLoading(false);
             setPopupContent({
               success: false,
