@@ -50,7 +50,9 @@ export default function PopupNotification({ success, message, showPopup }) {
           font-size: 2rem;
           line-height: 0.45;
           margin-left: 1rem;
-          background-color: none;
+          background-color: ${success
+            ? "var(--positive-light)"
+            : "var(--negative-light)"};
           border: none;
           outline: none;
           color: ${success ? "var(--positive)" : "var(--negative)"};
