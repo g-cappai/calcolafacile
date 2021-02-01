@@ -5,7 +5,7 @@ export default function ContactUsBlock() {
     <div className="outer-container">
       <div className="container py-2 text">
         <span>CalcolaFacile.it è in cerca di idee. </span>{" "}
-        <Link href="/contatti?cat=new_calc">
+        <Link href="/contatti">
           <a className="highlight"> Segnalaci nuovi calcoli.</a>
         </Link>
       </div>
