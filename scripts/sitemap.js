@@ -1,3 +1,5 @@
+//CD inside -> node sitemap.js
+
 const fs = require("fs");
 const globby = require("globby");
 const prettier = require("prettier");
@@ -10,11 +12,14 @@ const formatted = (sitemap) => prettier.format(sitemap, { parser: "html" });
 
 (async () => {
   const pages = await globby([
-    "pages/**/*.js",
-    "pages/*.js",
-    "!pages/_*.js",
-    "!pages/404.js",
+    "../pages/**/*.js",
+    "../pages/*.js",
+    "!../pages/_*.js",
+    "!../pages/404.js",
+    "!../pages/api/",
   ]);
+
+  console.log(pages);
 
   const pageSitemap = `
   ${pages
@@ -47,5 +52,9 @@ const formatted = (sitemap) => prettier.format(sitemap, { parser: "html" });
 
   const formattedSitemap = [formatted(generatedSitemap)];
 
-  fs.writeFileSync("public/sitemap.xml", formattedSitemap, "utf8");
+  fs.writeFileSync(
+    __dirname + "/../public/sitemap.xml",
+    formattedSitemap,
+    "utf8"
+  );
 })();
