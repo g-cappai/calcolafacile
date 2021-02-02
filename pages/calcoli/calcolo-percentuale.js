@@ -9,11 +9,11 @@ import Value from "../../components/elements/input-calcvalue";
 
 export const TITLE = "Calcolo della percentuale",
   DESC = [
-    "Calcola la percentuale di un numero oppure utilizza le formule inverse. ",
+    "Calcola la percentuale di un numero oppure utilizza le formule inverse per trovare il rapporto tra due numeri. ",
     "Puoi calcolare uno sconto o un aumento in percentuale semplicemente compilando i primi due campi.",
   ],
   META_DESC =
-    "Calcola la percentuale di un numero, lo sconto o l'aumento in percentuale. Oppure utilizza le formule inverse.";
+    "Calcola online la percentuale di un numero, lo sconto o l'aumento in percentuale. Oppure utilizza le formule inverse.";
 
 function Calc0() {
   const [perc, setPerc] = useState("");
@@ -21,7 +21,7 @@ function Calc0() {
   const [res, setRes] = useState("");
   const [resMsg, setResMsg] = useState("");
 
-  const explanation = "Inserisci due valori per calcolare il terzo.";
+  const explanation = "Inserisci due valori per trovare il terzo.";
   const examples = "(es. Il 20% di 15 è... )";
   const procedure = (
     <>

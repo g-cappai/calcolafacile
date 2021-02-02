@@ -1,5 +1,4 @@
-import BugReport from "../elements/bug-report";
-
+import Link from "next/link";
 export default function CalcBlock({
   explanation,
   examples,
@@ -27,7 +26,11 @@ export default function CalcBlock({
           </form>
           {result ? <div className="result mt-1">{result}</div> : ""}
         </div>
-        <BugReport />
+        <div className="bug-report">
+          <Link href="/contatti?cat=bug">
+            <a>Segnala problema</a>
+          </Link>
+        </div>
       </section>
 
       <style jsx>{`
@@ -84,6 +87,16 @@ export default function CalcBlock({
         .procedure {
           font-size: 1.2rem;
           line-height: 2.3;
+        }
+
+        .bug-report {
+          font-size: 82%;
+          margin-top: 0.3rem;
+          text-align: center;
+        }
+
+        .bug-report a {
+          color: rgba(0, 0, 0, 0.5);
         }
       `}</style>
     </>

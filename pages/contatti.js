@@ -3,7 +3,6 @@
 import DefaultLayout from "../components/layouts/default-layout";
 import PopupNotification from "../components/modules/popup-notification";
 import axios from "axios";
-import Link from "next/link";
 
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -97,7 +96,7 @@ export default function ContactPage() {
             setLoading(false);
             setPopupContent({
               success: true,
-              message: "Messaggio inviato correttamente.",
+              message: "Messaggio inviato.",
             });
           } else {
             setLoading(false);
@@ -106,7 +105,8 @@ export default function ContactPage() {
               message: (
                 <span>
                   Si è verificato un errore. <br />
-                  Controlla che l'email inserita sia valida e riprova.
+                  Controlla che l'email inserita sia valida oppure riprova più
+                  tardi.
                 </span>
               ),
             });
