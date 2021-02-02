@@ -39,7 +39,7 @@ export default async (req, res) => {
 
   transporter.sendMail(message, (err, data) => {
     if (err) {
-      res.json({ status: "fail", err });
+      res.json({ status: "fail" });
     } else {
       res.json({ status: "success" });
     }

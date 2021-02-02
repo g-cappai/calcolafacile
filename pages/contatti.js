@@ -100,7 +100,6 @@ export default function ContactPage() {
               message: "Messaggio inviato correttamente.",
             });
           } else {
-            console.log(response.data.err);
             setLoading(false);
             setPopupContent({
               success: false,
