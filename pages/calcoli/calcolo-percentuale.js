@@ -9,7 +9,7 @@ import Value from "../../components/elements/input-calcvalue";
 
 export const TITLE = "Calcolo della percentuale",
   DESC = [
-    "Calcola la percentuale di un numero oppure utilizza le formule inverse per trovare il rapporto tra due numeri. ",
+    "Utilizza la calcolatrice per trovare la percentuale di un numero, oppure usa le formule inverse per trovare il rapporto tra due numeri. ",
     "Puoi calcolare uno sconto o un aumento in percentuale semplicemente compilando i primi due campi.",
   ],
   META_DESC =
@@ -152,6 +152,7 @@ function Calc0() {
       examples={examples}
       procedure={procedure}
       result={resMsg}
+      page={TITLE}
       handleCalculate={handleCalculate}
       handleClear={handleClear}
     />

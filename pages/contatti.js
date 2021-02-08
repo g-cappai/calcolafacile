@@ -11,7 +11,8 @@ const TITLE = "Contatti",
   META_DESC = "Segnalaci nuovi calcoli, idee o problemi del sito";
 
 export default function ContactPage() {
-  const queryCategory = useRouter().query["cat"];
+  const queryCategory = useRouter().query["cat"],
+    buggedPage = useRouter().query["page"];
 
   //STATE
   const [name, setName] = useState("");
@@ -51,10 +52,15 @@ export default function ContactPage() {
   //Submit handling
   const handleSubmit = (e) => {
     e.preventDefault();
+    //YESYESYES it's a mess -> If query and bugged are defined & the subject is "Bug report" bugInfo exists, else not
+    let bugInfo =
+      queryCategory && buggedPage && subject == "Bug report"
+        ? `${subject}: ${buggedPage}`
+        : "";
     const messageData = {
       name,
       senderMail: emailSender,
-      subject,
+      subject: bugInfo || subject,
       content: message,
     };
     //Validate everything

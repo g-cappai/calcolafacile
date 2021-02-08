@@ -22,6 +22,7 @@ export default async (req, res) => {
   // COMMENT OUT EVERYTHING ELSE FOR TESTING (PROVISORY)
   //   let fakeStatus = { status: "success" };
   //   let response = await setTimeout(() => res.json(fakeStatus), 2000);
+  //   console.log(req.body);
 
   //   response;
   // };

@@ -6,6 +6,7 @@ export default function CalcBlock({
   result,
   handleCalculate,
   handleClear,
+  page,
 }) {
   return (
     <>
@@ -27,7 +28,7 @@ export default function CalcBlock({
           {result ? <div className="result mt-1">{result}</div> : ""}
         </div>
         <div className="bug-report">
-          <Link href="/contatti?cat=bug">
+          <Link href={`/contatti?cat=bug&page=${page}`}>
             <a>Segnala problema</a>
           </Link>
         </div>
