@@ -10,7 +10,9 @@ export default function HeadComponent({ title, meta_desc }) {
   return (
     <Head>
       <title>
-        {isHome() ? `${siteName} - ${siteMotto}` : `${title} | ${siteName}`}
+        {isHome()
+          ? `CalcolaFacile.it - ${siteMotto}`
+          : `${title} | ${siteName}`}
       </title>
       {meta_desc ? <meta name="description" content={meta_desc} /> : ""}
       <link rel="canonical" href={`https://${siteName}${path}`} />

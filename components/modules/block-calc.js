@@ -10,7 +10,7 @@ export default function CalcBlock({
 }) {
   return (
     <>
-      <section className="container pb-2">
+      <section className="pb-2">
         <div className="card">
           <div className="explanation primary">{explanation}</div>
           <div className="example mb-1">{examples}</div>
