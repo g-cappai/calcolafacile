@@ -23,7 +23,13 @@ export const TITLE = "Calcolo della percentuale",
   ),
   MORE_TEXT = (
     <>
+<<<<<<< HEAD
       <h2 class="code-line">Cos’è la percentuale?</h2>
+=======
+      <h3 class="code-line">
+        <a id="Cos_la_percentuale_0"></a>Cos’è la percentuale?
+      </h3>
+>>>>>>> 00a5ccea12f69e76a09b0b87af8c7a10c2e1d075
       <p class="has-line-data" data-line-start="2" data-line-end="3">
         La percentuale è il <strong>numero di parti</strong> di un intero di
         riferimento <strong>prese in considerazione</strong> dopo che l’intero è
@@ -56,10 +62,17 @@ export const TITLE = "Calcolo della percentuale",
         Ma se le biglie gialle fossero state ad esempio 4 e il totale 25? Be’ in
         quel caso è meglio conoscere alcuni semplici calcoli.
       </p>
+<<<<<<< HEAD
       <h2 class="code-line">
         <a id="Come_si_calcola_la_percentuale_di_un_numero_13"></a>Come si
         calcola la percentuale di un numero?
       </h2>
+=======
+      <h3 class="code-line">
+        <a id="Come_si_calcola_la_percentuale_di_un_numero_13"></a>Come si
+        calcola la percentuale di un numero?
+      </h3>
+>>>>>>> 00a5ccea12f69e76a09b0b87af8c7a10c2e1d075
       <p class="has-line-data" data-line-start="15" data-line-end="16">
         Per ottenere la percentuale di un numero dovrò conoscere due cose: la
         percentuale che voglio calcolare, appunto, e il numero che voglio usare
@@ -78,15 +91,23 @@ export const TITLE = "Calcolo della percentuale",
         Per saperlo dividiamo i 20cl in 100 parti (20/100 = 0,2). Ora abbiamo
         cento parti del valore di 0,2. Ma a noi servono solo 10 di quelle
         parti.Moltiplichiamo quindi 0,2 per 10 volte. (0,2 x 10 = 2) Adesso
+<<<<<<< HEAD
         sappiamo che il 10% di 20cl è 2cl.
         <br /> Forse è meglio farsi una spremuta!
+=======
+        sappiamo che il 10% di 20cl è 2cl. Forse è meglio farsi una spremuta!
+>>>>>>> 00a5ccea12f69e76a09b0b87af8c7a10c2e1d075
         <br />
         Per generalizzare possiamo quindi{" "}
         <strong>calcolare la percentuale con la seguente formula</strong>:
       </p>
       <ul>
         <li class="has-line-data" data-line-start="23" data-line-end="25">
+<<<<<<< HEAD
           <strong> a / 100 x b = n </strong>
+=======
+          a / 100 x b = n
+>>>>>>> 00a5ccea12f69e76a09b0b87af8c7a10c2e1d075
         </li>
       </ul>
       <p class="has-line-data" data-line-start="25" data-line-end="26">
@@ -116,7 +137,11 @@ export const TITLE = "Calcolo della percentuale",
       </p>
       <ul>
         <li class="has-line-data" data-line-start="35" data-line-end="37">
+<<<<<<< HEAD
           <strong> a : b = X : 100 → a x 100 / b = X </strong>
+=======
+          a : b = X : 100 → a x 100 / b = X
+>>>>>>> 00a5ccea12f69e76a09b0b87af8c7a10c2e1d075
         </li>
       </ul>
       <p class="has-line-data" data-line-start="37" data-line-end="38">
@@ -147,7 +172,11 @@ export const TITLE = "Calcolo della percentuale",
       </p>
       <ul>
         <li class="has-line-data" data-line-start="46" data-line-end="48">
+<<<<<<< HEAD
           <strong> a : X = b : 100 → a x 100 / b = X </strong>
+=======
+          a : X = b : 100 → a x 100 / b = X
+>>>>>>> 00a5ccea12f69e76a09b0b87af8c7a10c2e1d075
         </li>
       </ul>
       <p class="has-line-data" data-line-start="48" data-line-end="49">
