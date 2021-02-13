@@ -56,10 +56,7 @@ export const TITLE = "Calcolo della percentuale",
         Ma se le biglie gialle fossero state ad esempio 4 e il totale 25? Be’ in
         quel caso è meglio conoscere alcuni semplici calcoli.
       </p>
-      <h2 class="code-line">
-        <a id="Come_si_calcola_la_percentuale_di_un_numero_13"></a>Come si
-        calcola la percentuale di un numero?
-      </h2>
+      <h2 class="code-line">Come si calcola la percentuale di un numero?</h2>
       <p class="has-line-data" data-line-start="15" data-line-end="16">
         Per ottenere la percentuale di un numero dovrò conoscere due cose: la
         percentuale che voglio calcolare, appunto, e il numero che voglio usare

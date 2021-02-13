@@ -97,7 +97,7 @@ export default function CalcBlock({
         }
 
         .bug-report a {
-          color: rgba(0, 0, 0, 0.5);
+          color: rgba(0, 0, 0, 0.55);
         }
       `}</style>
     </>
