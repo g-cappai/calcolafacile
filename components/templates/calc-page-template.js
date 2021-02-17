@@ -16,7 +16,7 @@ export default function CalcPageTemplate({
       {/* {AD} */}
       <main className="container  my-1 py-1">
         <h1 className="page-title">{title}</h1>
-        <div className="mb-1">{desc}</div>
+        <p className="mb-1">{desc}</p>
 
         {/* {AD} */}
         {children}
@@ -24,7 +24,7 @@ export default function CalcPageTemplate({
 
         <p>
           Vuoi segnalarci delle inesattezze o hai nuove idee per il sito?
-          <Link href="\contatti">
+          <Link href="/contatti">
             <a> Contattaci! </a>
           </Link>
         </p>
