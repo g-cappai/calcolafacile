@@ -1,40 +1,32 @@
-//CD inside -> node sitemap.js
-
 const fs = require("fs");
 const globby = require("globby");
 const prettier = require("prettier");
-
-const getDate = new Date().toISOString();
 
 const DOMAIN_NAME = "https://calcolafacile.it";
 
 const formatted = (sitemap) => prettier.format(sitemap, { parser: "html" });
 
-(async () => {
+const generateSitemap = async () => {
   const pages = await globby([
-    "../pages/**/*.js",
-    "../pages/*.js",
-    "!../pages/_*.js",
-    "!../pages/404.js",
-    "!../pages/api/",
+    "pages/*.js",
+    "!pages/_*.js",
+    "!pages/404.js",
+    "content/text/*.mdx",
   ]);
-
-  console.log(pages);
 
   const pageSitemap = `
   ${pages
     .map((page) => {
       const path = page
         .replace("pages/", "")
-        .replace("../", "")
-        .replace(".js", "")
+        .replace(/(.js|.mdx)/, "")
+        .replace("content/text", "calcoli")
         .replace(/\/index/g, "");
       const routePath = path === "index" ? "" : path;
 
       return `
     <url>
     <loc>${DOMAIN_NAME}/${routePath}</loc>
-    <lastmod>${getDate}</lastmod>
     </url>
     `;
     })
@@ -58,4 +50,6 @@ const formatted = (sitemap) => prettier.format(sitemap, { parser: "html" });
     formattedSitemap,
     "utf8"
   );
-})();
+};
+
+module.exports = generateSitemap;

@@ -2,10 +2,10 @@ import Header from "../modules/header";
 import Footer from "../modules/footer";
 import HeadComponent from "../modules/head";
 
-export default function DefaultLayout({ title, meta_desc, children }) {
+export default function DefaultLayout({ title, meta_desc, slug, children }) {
   return (
     <>
-      <HeadComponent title={title} meta_desc={meta_desc} />
+      <HeadComponent title={title} meta_desc={meta_desc} slug={slug} />
       <div className="page-wrapper">
         <Header />
         <div className="page-content">{children}</div>

@@ -3,7 +3,7 @@ import matter from "gray-matter";
 import renderToString from "next-mdx-remote/render-to-string";
 import hydrate from "next-mdx-remote/hydrate";
 
-import AllCalcs from "../../content/calcs/all-calcs";
+import AllCalcs from "../../content/all-calcs";
 
 const components = AllCalcs;
 
@@ -12,7 +12,11 @@ import { fetchPageSlug, fetchMdxContent } from "../../lib/calcs";
 export default function CalcPage({ slug, metadata, mdxSource }) {
   const content = hydrate(mdxSource, { components });
   return (
-    <CalcPageTemplate title={metadata.title} meta_desc={metadata.meta_desc}>
+    <CalcPageTemplate
+      title={metadata.title}
+      meta_desc={metadata.meta_desc}
+      slug={slug}
+    >
       {content}
     </CalcPageTemplate>
   );
