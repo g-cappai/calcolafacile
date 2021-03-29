@@ -11,17 +11,22 @@ export default function Home() {
       <DefaultLayout title={TITLE} meta_desc={META_DESC}>
         <main>
           <div className="empty-page-center">
-            <h2 className="mb-1">CalcolaFacile.it</h2>{" "}
-            <p>Tutti i tuoi calcoli a portata di mano.</p>
+            <div className="text-container">
+              <h2 className="mb-1">CalcolaFacile.it</h2>{" "}
+              <p>Tutti i tuoi calcoli a portata di mano.</p>
+            </div>
           </div>
         </main>
       </DefaultLayout>
       <style jsx>
         {`
+          .text-container {
+          }
           .empty-page-center {
+            padding: 1rem;
             height: 100%;
             text-align: center;
-            font-size: 200%;
+            font-size: 170%;
             color: white;
             background-color: var(--primary);
           }

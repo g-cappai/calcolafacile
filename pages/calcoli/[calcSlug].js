@@ -37,6 +37,7 @@ export async function getStaticProps({ params }) {
 
   return {
     props: {
+      key: slug,
       slug,
       mdxSource,
       metadata: data,
