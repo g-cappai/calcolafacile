@@ -5,8 +5,9 @@ import { useRouter } from "next/router";
 const siteName = "calcolafacile.it",
   siteMotto = "Tutti i tuoi calcoli a portata di mano";
 
-export default function HeadComponent({ title, meta_desc, slug }) {
-  const path = useRouter().pathname;
+export default function HeadComponent({ title, meta_desc }) {
+  const path = useRouter().asPath;
+
   return (
     <Head>
       <title>
@@ -15,10 +16,7 @@ export default function HeadComponent({ title, meta_desc, slug }) {
           : `${title} | ${siteName}`}
       </title>
       {meta_desc ? <meta name="description" content={meta_desc} /> : ""}
-      <link
-        rel="canonical"
-        href={`https://${siteName}${slug ? `/calcoli/${slug}` : path}`}
-      />
+      <link rel="canonical" href={`https://${siteName}${path}`} />
     </Head>
   );
 }

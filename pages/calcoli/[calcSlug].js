@@ -12,11 +12,7 @@ import { fetchPageSlug, fetchMdxContent } from "../../lib/calcs";
 export default function CalcPage({ slug, metadata, mdxSource }) {
   const content = hydrate(mdxSource, { components });
   return (
-    <CalcPageTemplate
-      title={metadata.title}
-      meta_desc={metadata.meta_desc}
-      slug={slug}
-    >
+    <CalcPageTemplate title={metadata.title} meta_desc={metadata.meta_desc}>
       {content}
     </CalcPageTemplate>
   );

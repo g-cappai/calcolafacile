@@ -1,6 +1,7 @@
+import CalcoloBollo from "./calcs/CalcoloBollo";
 import CalcoloPercentuale from "./calcs/CalcoloPercentuale";
-import Miao from "./calcs/Miao";
+import ConvertitoreCVKW from "./calcs/ConvertitoreCVKW";
 
-const AllCalcs = { CalcoloPercentuale, Miao };
+const AllCalcs = { CalcoloBollo, CalcoloPercentuale, ConvertitoreCVKW };
 
 export default AllCalcs;

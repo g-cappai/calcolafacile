@@ -21,6 +21,10 @@ export default function Logo() {
           font-weight: 500;
           font-size: 1.2rem;
         }
+
+        a:hover {
+          text-decoration: none;
+        }
       `}</style>
     </>
   );

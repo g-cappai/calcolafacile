@@ -1,46 +1,75 @@
 import Link from "next/link";
+
 export default function CalcBlock({
   explanation,
   examples,
-  procedure,
   result,
   handleCalculate,
   handleClear,
-  page,
+  pageTitle,
+  hasClearBtn,
+  size = "m",
+  children,
 }) {
+  const dynamicwidth = () => {
+    const widths = {
+      s: "360px",
+      m: "640px",
+      l: "",
+    };
+
+    return widths[size];
+  };
   return (
     <>
-      <section className="pb-2">
-        <div className="card">
-          <div className="explanation primary">{explanation}</div>
-          <div className="example mb-1">{examples}</div>
-          <form onSubmit={handleCalculate}>
-            <div className="procedure">{procedure}</div>
-            <div className="mt-1">
-              <button className="clear" onClick={handleClear} type="button">
-                Cancella
-              </button>
-              <button className="submit" type="submit">
-                Calcola
-              </button>
-            </div>
+      <section className="my-2">
+        <div className="card shadow-1">
+          {explanation && (
+            <div className="explanation primary">{explanation}</div>
+          )}
+          {examples && <div className="example mb-1">{examples}</div>}
+          <form onSubmit={handleCalculate} autoComplete="off">
+            <div className="procedure">{children}</div>
+            {(hasClearBtn || handleCalculate) && (
+              <div className="mt-1">
+                {hasClearBtn && (
+                  <button
+                    className="clear shadow-focus"
+                    onClick={handleClear}
+                    type="button"
+                  >
+                    Cancella
+                  </button>
+                )}
+
+                {handleCalculate && (
+                  <button className="submit shadow-focus" type="submit">
+                    Calcola
+                  </button>
+                )}
+              </div>
+            )}
           </form>
           {result ? <div className="result mt-1">{result}</div> : ""}
         </div>
         <div className="bug-report">
-          <Link href={`/contatti?cat=bug&page=${page}`}>
+          <Link href={`/contatti?cat=bug&page=${pageTitle}`}>
             <a>Segnala problema</a>
           </Link>
         </div>
       </section>
 
       <style jsx>{`
+        .mt-1 {
+          margin-top: 1.5rem;
+        }
+
         button {
           padding: 0.5rem;
           font-size: 1rem;
           border: none;
           background: transparent;
-          margin-right: 5px;
+          margin: 0 0.35rem;
           border-radius: 5px;
           cursor: pointer;
           letter-spacing: 0.7pt;
@@ -70,8 +99,9 @@ export default function CalcBlock({
 
         .card {
           text-align: center;
-          width: fit-content;
           border: 1px solid #ccc;
+          width: ${dynamicwidth()};
+          max-width: 100%;
         }
 
         .example {
@@ -87,7 +117,6 @@ export default function CalcBlock({
 
         .procedure {
           font-size: 1.2rem;
-          line-height: 2.3;
         }
 
         .bug-report {
@@ -98,6 +127,10 @@ export default function CalcBlock({
 
         .bug-report a {
           color: rgba(0, 0, 0, 0.55);
+        }
+
+        .bug-report a:hover {
+          text-decoration: underline;
         }
       `}</style>
     </>

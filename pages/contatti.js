@@ -1,7 +1,7 @@
 //!!!!MESSY PAGE!!!! Pro tip: Think -> Project -> Realize || TO BE REVIEWED
 
 import DefaultLayout from "../components/layouts/default-layout";
-import PopupNotification from "../components/modules/popup-notification";
+import PopupNotification from "../components/elements/popup-notification";
 import axios from "axios";
 
 import { useRouter } from "next/router";
@@ -52,7 +52,7 @@ export default function ContactPage() {
   //Submit handling
   const handleSubmit = (e) => {
     e.preventDefault();
-    //YESYESYES it's a mess -> If query and bugged are defined & the subject is "Bug report" bugInfo exists, else not
+    //YESYESYES it's a mess -> If query and bugged are defined && the subject is "Bug report" bugInfo exists, else not
     let bugInfo =
       queryCategory && buggedPage && subject == "Bug report"
         ? `${subject}: ${buggedPage}`

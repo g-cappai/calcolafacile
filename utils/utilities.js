@@ -1,3 +1,12 @@
+const commaToDot = (num) => {
+  let convertedNum = num;
+  return convertedNum.replace(/,/, ".");
+};
+
+const isValidNumber = (num) => {
+  return !isNaN(num);
+};
+
 //Takes a number and return the correct article to put before
 export default function rightArticleFor(num, capital = false) {
   if (num >= 1 && num < 2) {
@@ -8,3 +17,5 @@ export default function rightArticleFor(num, capital = false) {
     return capital ? "Il " : "il ";
   }
 }
+
+export { commaToDot, isValidNumber, rightArticleFor };
