@@ -317,6 +317,10 @@ select:focus {
   text-decoration: none;
 }
 
+.clickable-icon {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .clickable-icon:hover {
   text-decoration: none;
 }
