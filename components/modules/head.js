@@ -25,6 +25,11 @@ export default function HeadComponent({ title, meta_desc }) {
 
   return (
     <Head>
+      <script
+        data-ad-client="ca-pub-2638875088789645"
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      ></script>
       <title>
         {isHome()
           ? `CalcolaFacile.it - ${siteMotto}`
