@@ -381,13 +381,16 @@ export default function PageNotFound() {
           </p>
 
           <hr />
+          <div id="cookie-policy-container">
+            <script
+              id="CookieDeclaration"
+              src="https://consent.cookiebot.com/142c4d99-ee30-4f35-a81e-7fafca5e7998/cd.js"
+              type="text/javascript"
+              async
+            ></script>
+          </div>
 
-          <script
-            id="CookieDeclaration"
-            src="https://consent.cookiebot.com/142c4d99-ee30-4f35-a81e-7fafca5e7998/cd.js"
-            type="text/javascript"
-            async
-          ></script>
+          <br />
         </div>
       </DefaultLayout>
     </>

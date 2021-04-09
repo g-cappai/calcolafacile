@@ -26,13 +26,6 @@ export default function HeadComponent({ title, meta_desc }) {
   return (
     <Head>
       <script
-        id="Cookiebot"
-        src="https://consent.cookiebot.com/uc.js"
-        data-cbid="142c4d99-ee30-4f35-a81e-7fafca5e7998"
-        type="text/javascript"
-        async
-      ></script>
-      <script
         data-ad-client="ca-pub-2638875088789645"
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
