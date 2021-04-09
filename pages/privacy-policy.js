@@ -66,124 +66,15 @@ export default function PageNotFound() {
           <h3 id="-cookie-policy-">
             <strong>Cookie Policy</strong>
           </h3>
-          <p>
-            Questo sito utilizza cookies, anche di terze parti, per migliorarne
-            l&#39;esperienza di navigazione, consentire a chi naviga di
-            usufruire di eventuali servizi online e monitorare la navigazione
-            nel sito.
-          </p>
-          <h3 id="-come-disabilitare-i-cookies-">
-            <strong>Come disabilitare i Cookies</strong>
-          </h3>
-          <p>
-            E&#39; possibile disabilitare i cookies direttamente dal browser
-            utilizzato, accedendo alle impostazioni (preferenze oppure opzioni):
-            questa scelta potrebbe limitare alcune funzionalità di navigazione
-            del sito.
-          </p>
-          <h3 id="-gestione-dei-cookies-">
-            <strong>Gestione dei Cookies</strong>
-          </h3>
-          <p>
-            I cookies utilizzati in questo sito possono rientrare nelle
-            categorie descritte di seguito.
-          </p>
-          <ul>
-            <li>
-              <p>
-                <strong>
-                  Attività strettamente necessarie al funzionamento
-                </strong>
-                \ Questi cookies hanno natura tecnica e permettono al sito di
-                funzionare correttamente. Ad esempio, mantengono l&#39;utente
-                collegato durante la navigazione evitando che il sito richieda
-                di collegarsi più volte per accedere alle pagine successive.
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>Attività di salvataggio delle preferenze</strong>\
-                Questi cookie permettono di ricordare le preferenze selezionate
-                dall&#39;utente durante la navigazione, ad esempio, consentono
-                di impostare la lingua.
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>
-                  Attività Statistiche e di Misurazione dell&#39;audience (es:
-                  Google Analytics)
-                </strong>
-                \ Questi cookie ci aiutano a capire, attraverso dati raccolti in
-                forma anonima e aggregata, come gli utenti interagiscono con i
-                siti internet fornendo informazioni relative alle sezioni
-                visitate, il tempo trascorso sul sito, eventuali
-                malfunzionamenti. Questo aiuta a migliorare la resa dei siti
-                internet.
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>Cookie di social media (es: Facebook)</strong>\ Questi
-                cookie di terza parte vengono utilizzati per integrare alcune
-                diffuse funzionalità dei principali social media e fornirle
-                all&#39;interno del sito. In particolare permettono la
-                registrazione e l&#39;autenticazione sul sito tramite facebook e
-                google connect, la condivisione e i commenti di pagine del sito
-                sui social, abilitano le funzionalità del &quot;mi piace&quot;
-                su Facebook e del &quot;+1&quot; su G+.
-              </p>
-            </li>
-          </ul>
-          <h3 id="-fornitori-di-terze-parti-">
-            <strong>Fornitori di terze parti</strong>
-          </h3>
-          <p>
-            I fornitori di terze parti, tra cui Google, utilizzano cookie per
-            pubblicare annunci in base alle precedenti visite di un utente su
-            questo sito.
-          </p>
-          <p>
-            L&#39;utilizzo dei cookie per la pubblicità consente a Google e ai
-            suoi partner di pubblicare annunci per gli utenti di questo sito (e
-            su altri siti) in base ai dati statistici raccolti su questo sito e
-            sui siti web dei partner Google.
-          </p>
-          <p>
-            Gli utenti possono scegliere di disattivare la pubblicità
-            personalizzata, visitando la pagina{" "}
-            <Link href="https://www.google.com/settings/ads">
-              <a href="">Impostazioni annunci</a>
-            </Link>
-            .
-          </p>
-          <p>
-            Visitando la pagina www.aboutads.info potrai disattivare i cookies
-            dei fornitori di terze parti.
-          </p>
-          <h3 id="-i-nostri-partner-pubblicitari-">
-            <strong>I nostri partner pubblicitari</strong>
-          </h3>
-          <p>
-            Alcuni dei nostri partner pubblicitari possono utilizzare i cookies
-            sul nostro sito per raccogliere dati sulla navigazione degli utenti
-            in forma anonima. Tra i nostri partner pubblicitari figurano:
-          </p>
-          <p>
-            Gli annunci dei fornitori terze parti gestiscono reti pubblicitarie
-            che utilizzano la tecnologia dei cookies nei rispettivi annunci e
-            nei link che appaiono sul nostro sito. Gli annunci vengono così
-            inviati direttamente al tuo browser. Riceveranno automaticamente il
-            tuo indirizzo IP. Altre tecnologie (come i cookie o JavaScript)
-            possono anche essere utilizzati dalle reti pubblicitarie di terze
-            parti del nostro sito per misurare l&#39;efficacia delle loro
-            campagne pubblicitarie e/o personalizzare i contenuti pubblicitari
-            che vedete sul sito.
-          </p>
-          <p>
-            Il nostro sito non ha accesso o non controlla questi cookie
-            utilizzati da inserzionisti di terze parti.
-          </p>
+          <div id="cookie-policy-container">
+            <script
+              id="CookieDeclaration"
+              src="https://consent.cookiebot.com/142c4d99-ee30-4f35-a81e-7fafca5e7998/cd.js"
+              type="text/javascript"
+              async
+            ></script>
+          </div>
+          <br />
           <h3 id="-norme-sulla-privacy-di-terze-parti-">
             <strong>Norme sulla privacy di terze parti</strong>
           </h3>
@@ -379,17 +270,6 @@ export default function PageNotFound() {
             o hai domande sulla nostra politica sulla privacy non esitare a
             contattarci.
           </p>
-
-          <hr />
-          <div id="cookie-policy-container">
-            <script
-              id="CookieDeclaration"
-              src="https://consent.cookiebot.com/142c4d99-ee30-4f35-a81e-7fafca5e7998/cd.js"
-              type="text/javascript"
-              async
-            ></script>
-          </div>
-
           <br />
         </div>
       </DefaultLayout>
