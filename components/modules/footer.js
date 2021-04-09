@@ -7,6 +7,10 @@ export default function Footer() {
           <Link href="/contatti">
             <a className="norm-link">Contatti</a>
           </Link>
+          |
+          <Link href="/privacy-policy">
+            <a className="norm-link">Privacy</a>
+          </Link>
         </div>
 
         <div className=" copy-container">
@@ -17,6 +21,11 @@ export default function Footer() {
         .footer-menu {
           text-align: center;
           padding-bottom: 1rem;
+        }
+
+        .footer-menu > * {
+          margin-right: 0.5rem;
+          margin-left: 0.5rem;
         }
 
         .copy {
