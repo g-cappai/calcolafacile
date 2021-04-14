@@ -21,15 +21,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   );
 
 export default function HeadComponent({ title, meta_desc }) {
-  const path = useRouter().asPath;
+  const path = useRouter().asPath.replace(/\?.*/, "");
 
   return (
     <Head>
-      <script
+      {/* <script
         data-ad-client="ca-pub-2638875088789645"
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-      ></script>
+      ></script> */}
       <title>
         {isHome()
           ? `CalcolaFacile.it - ${siteMotto}`

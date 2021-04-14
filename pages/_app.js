@@ -1,3 +1,5 @@
+import { ChakraProvider } from "@chakra-ui/react";
+
 import "../styles/globals.css";
 import Head from "next/head";
 function MyApp({ Component, pageProps }) {
@@ -6,7 +8,9 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
-      <Component {...pageProps} />
+      <ChakraProvider>
+        <Component {...pageProps} />
+      </ChakraProvider>
     </>
   );
 }
