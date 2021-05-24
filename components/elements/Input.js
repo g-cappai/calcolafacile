@@ -27,7 +27,7 @@ const Input = ({
     <>
       <InputLayout labelText={labelText} error={error} id={id}>
         <input
-          className={error ? "error-input" : undefined}
+          className={error ? "error-input" : "undefined"}
           value={value}
           onChange={onChange}
           type={type}
