@@ -1,9 +1,9 @@
-import Head from "next/head";
-import isHome from "../../utils/isHome";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import isHome from '../../utils/isHome';
+import { useRouter } from 'next/router';
 
-const siteName = "calcolafacile.it",
-  siteMotto = "Tutti i tuoi calcoli a portata di mano",
+const siteName = 'calcolafacile.it',
+  siteMotto = 'Tutti i tuoi calcoli a portata di mano',
   gTagManagerHead = (
     <>
       {/* <!-- Google Tag Manager --> */}
@@ -21,21 +21,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   );
 
 export default function HeadComponent({ title, meta_desc }) {
-  const path = useRouter().asPath.replace(/\?.*/, "");
+  const path = useRouter().asPath.replace(/\?.*/, '');
 
   return (
     <Head>
-      {/* <script
+      <script
         data-ad-client="ca-pub-2638875088789645"
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-      ></script> */}
+      ></script>
       <title>
         {isHome()
           ? `CalcolaFacile.it - ${siteMotto}`
           : `${title} | ${siteName}`}
       </title>
-      {meta_desc ? <meta name="description" content={meta_desc} /> : ""}
+      {meta_desc ? <meta name="description" content={meta_desc} /> : ''}
       {gTagManagerHead}
       <link rel="canonical" href={`https://${siteName}${path}`} />
     </Head>
