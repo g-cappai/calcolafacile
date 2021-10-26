@@ -51,7 +51,7 @@ export const tariffeBollo = [
   {
     regioni: [
       "Basilicata",
-      "Emilia Romagna",
+      "Emilia-Romagna",
       "Lombardia",
       "Sicilia",
       "Puglia",
